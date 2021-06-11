@@ -4,7 +4,7 @@ startRotation();
 function startRotation() {
   var rotateElement = document.getElementsByClassName('rotate-this');
   new Propeller(rotateElement, {
-    inertia: 0.8,
+    inertia: 0.9,
     speed: 10,
   });
 }
