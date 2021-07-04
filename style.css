@@ -114,6 +114,94 @@ html {
   background-position: center;
 }
 
+.hidden {
+  opacity: 0;
+  z-index: -5;
+}
+
+#aboutMeBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 0;
+  z-index: 4;
+}
+
+#aboutMe {
+  position: absolute;
+  top: 25vh;
+  left: 27.5vw;
+  width: 45vw;
+  height: 50vh;
+  background: #fff;
+  z-index: 5;
+  opacity: 0;
+}
+
+#aboutMe .title img {
+  width: 11%;
+  height: 11%;
+}
+
+#aboutMe .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 6% 0;
+}
+
+#aboutMe ul {
+  list-style-type: none;
+}
+
+#aboutMe ul a {
+  text-decoration: none;
+  color: black;
+}
+
+#aboutMe .title ul li h1 {
+  font-size: 2.5rem;
+}
+
+#aboutMe .title ul li p {
+  font-size: 1.5rem;
+}
+
+#aboutMe .contactAndInfo {
+  margin: 9% 0 0 6%;
+}
+
+#aboutMe .contactAndInfo ul li,
+#aboutMe .contactAndInfo ul a {
+  margin-bottom: 0.5%;
+  font-size: 1.3rem;
+}
+
+#aboutContainer #exitButton {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: -80px;
+  width: 50px;
+  height: 50px;
+  border: solid 3px #fff;
+  border-radius: 50%;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aboutContainer #exitButton:hover {
+  background: red;
+}
+
+#aboutContainer .exit {
+  color: #fff;
+}
+
 #header {
   display: flex;
   justify-content: space-evenly;
@@ -304,6 +392,12 @@ html {
 #info .info_first {
   font-weight: bold;
   color: rgb(38, 38, 38);
+}
+
+#info .info_first:hover,
+#info .info_second:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 #info .info_second {

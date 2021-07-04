@@ -4,6 +4,12 @@ const gallery_item = document.querySelectorAll('.gallery_item');
 const gallery = document.querySelector('#gallery');
 const return_button = document.querySelector('.fa-arrow-left');
 const landing_page = document.querySelector('#landing_page');
+const aboutAndContact = document.querySelector('.info_first');
+const aboutContainer = document.querySelector('#aboutContainer');
+const aboutMeBackground = document.querySelector('#aboutMeBackground');
+const aboutMe = document.querySelector('#aboutMe');
+const exitButton = document.querySelector('#exitButton');
+const fullScreen = document.querySelector('.info_second');
 
 // Rotation api function (IIFE)
 (function () {
@@ -274,3 +280,38 @@ for (let i = 0; i < gallery_item.length; i++) {
     setTimeout(slidingAnimation, 1000);
   });
 }
+
+// about and contact pop up when clicked
+aboutAndContact.addEventListener('click', () => {
+  aboutContainer.classList.remove('hidden');
+  const tl = new TimelineMax();
+  tl.fromTo(aboutMeBackground, 0.3, { opacity: '0' }, { opacity: '0.95' })
+    .fromTo(
+      aboutMe,
+      0.5,
+      { transform: 'translateY(5%)', opacity: '0' },
+      {
+        transform: 'translateY(0)',
+        opacity: '1',
+      },
+      '0.3'
+    )
+    .fromTo(
+      exitButton,
+      0.5,
+      { transform: 'translateX(100%)', opacity: '0' },
+      { transform: 'translateX(0)', opacity: '1' },
+      '1'
+    );
+});
+
+// Close about and contact when clicked
+exitButton.addEventListener('click', () => {
+  aboutContainer.classList.add('hidden');
+  console.log('hi');
+});
+
+// Open and Close Full Screen
+fullScreen.addEventListener('click', () =>
+  document.documentElement.requestFullscreen()
+);
