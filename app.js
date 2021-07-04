@@ -308,10 +308,15 @@ aboutAndContact.addEventListener('click', () => {
 // Close about and contact when clicked
 exitButton.addEventListener('click', () => {
   aboutContainer.classList.add('hidden');
-  console.log('hi');
 });
 
 // Open and Close Full Screen
-fullScreen.addEventListener('click', () =>
-  document.documentElement.requestFullscreen()
-);
+fullScreen.addEventListener('click', () => {
+  if (document.fullscreenElement) {
+    document.exitFullscreen();
+    fullScreen.innerHTML = 'fullscreen';
+  } else {
+    document.documentElement.requestFullscreen();
+    fullScreen.innerHTML = 'exit fullscreen';
+  }
+});
