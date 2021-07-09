@@ -136,7 +136,7 @@ html {
   left: 27.5vw;
   width: 45vw;
   height: 50vh;
-  background: #fff;
+  background: #ffff;
   z-index: 5;
   opacity: 0;
 }
@@ -394,4 +394,9 @@ html {
 
 #info .info_second {
   color: gray;
+}
+
+#info .info_second_2 {
+  color: gray;
+  display: none;
 }
