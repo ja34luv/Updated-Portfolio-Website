@@ -1,135 +1,20 @@
-#header {
-  height: 15%;
-}
-
-#header img {
-  width: 50px;
-  height: 50px;
-}
-
-#info {
-  top: 88%;
-}
+/* Optimized for 360 * 640 */
 
 #info .info_first,
 #info .info_second {
   font-size: 14px;
 }
 
+#slider #return_button {
+  top: 2vh;
+  left: 4vw;
+}
+
 #gallery {
-  top: -650px;
-  left: -1180px;
-}
-
-#gallery .gallery_item {
-  margin: -116.933334px 0 0 -82.66665px; /* (height / 2) & (width / 2) */
-  width: 165.3333px; /* A4 in pixels is 2480 x 3508 px divide this by 15 */
-  height: 233.866667px;
-}
-
-#gallery .gallery_item .title {
-  font-size: 5px;
-  margin-top: -10px;
-}
-
-#gallery .gallery_item .title .first,
-#gallery .gallery_item .title .second {
-  font-size: 13px;
-}
-
-.deg0 {
-  transform: translate(30rem) rotate(90deg);
-} /*30rem = half the width of the wrapper*/
-.deg22_5 {
-  transform: rotate(22.5deg) translate(30rem) rotate(-22.5deg) rotate(112.5deg);
-}
-.deg45 {
-  transform: rotate(45deg) translate(30rem) rotate(-45deg) rotate(135deg);
-}
-.deg67_5 {
-  transform: rotate(67.5deg) translate(30rem) rotate(-67.5deg) rotate(157.5deg);
-}
-.deg90 {
-  transform: rotate(90deg) translate(30rem) rotate(-90deg) rotate(180deg);
-}
-.deg112_5 {
-  transform: rotate(112.5deg) translate(30rem) rotate(-112.5deg)
-    rotate(202.5deg);
-}
-.deg135 {
-  transform: rotate(135deg) translate(30rem) rotate(-135deg) rotate(225deg);
-}
-.deg157_5 {
-  transform: rotate(157.5deg) translate(30rem) rotate(-157.5deg)
-    rotate(247.5deg);
-}
-.deg180 {
-  transform: translate(-30rem) rotate(270deg);
-}
-.deg202_5 {
-  transform: rotate(202.5deg) translate(30rem) rotate(-202.5deg)
-    rotate(292.5deg);
-}
-.deg225 {
-  transform: rotate(225deg) translate(30rem) rotate(-225deg) rotate(315deg);
-}
-.deg247_5 {
-  transform: rotate(247.5deg) translate(30rem) rotate(-247.5deg)
-    rotate(337.5deg);
-}
-.deg270 {
-  transform: rotate(270deg) translate(30rem) rotate(-270deg);
-}
-.deg292_5 {
-  transform: rotate(292.5deg) translate(30rem) rotate(-292.5deg)
-    rotate(382.5deg);
-}
-.deg315 {
-  transform: rotate(315deg) translate(30rem) rotate(-315deg) rotate(405deg);
-}
-.deg337_5 {
-  transform: rotate(337.5deg) translate(30rem) rotate(-337.5deg)
-    rotate(427.5deg);
-}
-
-.deg337_5_part_1,
-.deg337_5_part_2 {
-  margin: -116.933334px 0 0 -41.333325px; /* (height / 2) & (width / 2) */
-  width: 82.66665px; /* A4 in pixels is 2480 x 3508 px divide this by 15 / 2 */
-  height: 233.866667px;
-}
-
-.deg337_5_part_1 {
-  transform: rotate(337.5deg) translate(30rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(-41.333325px); /* last translate = - (width / 2) */
-}
-
-.deg337_5_part_2 {
-  transform: rotate(337.5deg) translate(30rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(41.333325px); /* last translate = width / 2 */
-  background-position: -82.66665px;
-}
-
-#gallery .gallery_item:hover {
-  width: 165.3333px; /* A4 in pixels is 2480 x 3508 px divide this by 15 */
-  height: 233.866667px;
-  border: 3px solid white; /* Change it so the image pops up +animation */
-  z-index: 1;
-}
-
-#aboutMe {
-  width: 70vw;
-  height: 45vh;
-  top: 27.5vh;
-  left: 25vw;
-}
-
-#aboutContainer #exitButton {
-  left: -70px;
-}
-
-#aboutMe .title {
-  margin-top: 8%;
+  /* top: -650px; */
+  top: -102%;
+  /* left: -1180px; */
+  left: -326%;
 }
 
 #aboutMe .title ul li h1 {
@@ -140,68 +25,12 @@
   font-size: 0.68rem;
 }
 
-#aboutMe .title img {
-  opacity: 0;
-}
-
-#aboutMe .contactAndInfo {
-  margin: 19% 0 0 6%;
-}
-
 #aboutMe .contactAndInfo ul li,
 #aboutMe .contactAndInfo ul a {
   font-size: 0.9rem;
 }
 
-#info .info_second {
-  display: none;
-}
-
 #info .info_second_2 {
   display: inline-block;
   font-size: 14px;
-}
-
-#slider {
-  grid-template-columns: 32vw;
-  grid-template-rows: 40vh 40vh;
-  grid-row-gap: 4vh;
-}
-
-#slider #return_button {
-  top: 2vh;
-  left: 4vw;
-}
-
-#slider .grid-item {
-  margin: 0;
-}
-
-#slider .grid-item-1,
-#slider .grid-item-3 {
-  display: none;
-}
-
-#slider .grid-item-2,
-#slider .grid-item-4 {
-  border-top-left-radius: 3%;
-  border-bottom-left-radius: 3%;
-  width: 80vw;
-  margin-top: 8vh;
-  margin-left: 10vw;
-}
-
-#slider .grid-item-2 h1,
-#slider .grid-item-4 h1 {
-  font-size: 25px;
-  text-align: center;
-  line-height: 1.2;
-  width: 100%;
-  margin: 20% auto 0;
-}
-
-#slider .grid-item-4 p {
-  text-align: center;
-  width: 100%;
-  font-size: 13px;
 }
