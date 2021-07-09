@@ -236,9 +236,8 @@ html {
   margin: -175.4px 0 0 -124px; /* (height / 2) & (width / 2) */
   width: 248px; /* A4 in pixels is 2480 x 3508 px divide this by 10 */
   height: 350.8px;
-  background-color: gray;
   transition: width 0.5s ease, height 0.5s ease;
-  /* box-shadow: 5px 5px 3px #a0a0a0; */
+  /* background-color: gray; */
 }
 
 #gallery .gallery_item:hover {
@@ -324,9 +323,8 @@ html {
     rotate(427.5deg);
 }
 
-.deg337_5_part_1 {
-  transform: rotate(337.5deg) translate(45rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(-62px); /* last translate = - (width / 2) */
+.deg337_5_part_1,
+.deg337_5_part_2 {
   background-image: url('source/img/Gallery Item News 08 Version 2.jpg');
   background-size: cover;
   display: inline-block;
@@ -340,21 +338,15 @@ html {
   /* box-shadow: 0px 0px 0px #a0a0a0; */
 }
 
+.deg337_5_part_1 {
+  transform: rotate(337.5deg) translate(45rem) rotate(-337.5deg)
+    rotate(427.5deg) translate(-62px); /* last translate = - (width / 2) */
+}
+
 .deg337_5_part_2 {
   transform: rotate(337.5deg) translate(45rem) rotate(-337.5deg)
     rotate(427.5deg) translate(62px); /* last translate = width / 2 */
-  background-image: url('source/img/Gallery Item News 08 Version 2.jpg');
-  background-size: cover;
   background-position: -124px;
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -175.4px 0 0 -62px; /* (height / 2) & (width / 2) */
-  width: 124px; /* A4 in pixels is 2480 x 3508 px divide this by 8 / 2 */
-  height: 350.8px;
-  background-color: gray;
-  /* box-shadow: 5px 5px 0px #a0a0a0; */
   z-index: -1;
 }
 
@@ -378,10 +370,10 @@ html {
 }
 
 #info {
+  width: 100%;
+  text-align: center;
   position: absolute;
   top: 92%;
-  left: calc(50% - 89.883px);
-  text-align: center;
 }
 
 #info a {
