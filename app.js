@@ -154,7 +154,7 @@ for (let i = 0; i < gallery_item.length; i++) {
       angle = 179.999;
       img_url = 'source/img/Dice screenshot.jpg';
       h1 =
-        'First to 100 Wins 🏆<br/> But Do Not Roll a 1 🙅‍♀️<br/> Test your luck';
+        'First to 100 Wins 🏆<br/> But Do Not Roll a 1 🙅‍♀️<br/> Test Your Luck';
       a_url = 'https://dice-jaehonglee.netlify.app/';
       websiteName = 'Dice';
       skills = 'HTML, CSS, Vanilla JavaScript, and DOM';

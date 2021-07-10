@@ -1,0 +1,218 @@
+/* Optimized for 768 * 1024 */
+
+#header {
+  height: 15%;
+}
+
+#header img {
+  width: 60px;
+  height: 60px;
+}
+
+#info {
+  top: 88%;
+}
+
+#info .info_first,
+#info .info_second {
+  font-size: 20px;
+}
+
+#gallery {
+  /* top: -650px; */
+  top: -30%;
+  /* left: -1180px; */
+  left: -112.7%;
+}
+
+#gallery .gallery_item {
+  margin: -159.454545px 0 0 -112.727272px; /* (height / 2) & (width / 2) */
+  width: 225.454545px; /* A4 in pixels is 2480 x 3508 px divide this by 11 */
+  height: 318.909091px;
+}
+
+#gallery .gallery_item .title {
+  font-size: 5px;
+  margin-top: -10px;
+}
+
+#gallery .gallery_item .title .first,
+#gallery .gallery_item .title .second {
+  font-size: 16px;
+}
+
+.deg0 {
+  transform: translate(38rem) rotate(90deg);
+} /*38rem = half the width of the wrapper*/
+.deg22_5 {
+  transform: rotate(22.5deg) translate(38rem) rotate(-22.5deg) rotate(112.5deg);
+}
+.deg45 {
+  transform: rotate(45deg) translate(38rem) rotate(-45deg) rotate(135deg);
+}
+.deg67_5 {
+  transform: rotate(67.5deg) translate(38rem) rotate(-67.5deg) rotate(157.5deg);
+}
+.deg90 {
+  transform: rotate(90deg) translate(38rem) rotate(-90deg) rotate(180deg);
+}
+.deg112_5 {
+  transform: rotate(112.5deg) translate(38rem) rotate(-112.5deg)
+    rotate(202.5deg);
+}
+.deg135 {
+  transform: rotate(135deg) translate(38rem) rotate(-135deg) rotate(225deg);
+}
+.deg157_5 {
+  transform: rotate(157.5deg) translate(38rem) rotate(-157.5deg)
+    rotate(247.5deg);
+}
+.deg180 {
+  transform: translate(-38rem) rotate(270deg);
+}
+.deg202_5 {
+  transform: rotate(202.5deg) translate(38rem) rotate(-202.5deg)
+    rotate(292.5deg);
+}
+.deg225 {
+  transform: rotate(225deg) translate(38rem) rotate(-225deg) rotate(315deg);
+}
+.deg247_5 {
+  transform: rotate(247.5deg) translate(38rem) rotate(-247.5deg)
+    rotate(337.5deg);
+}
+.deg270 {
+  transform: rotate(270deg) translate(38rem) rotate(-270deg);
+}
+.deg292_5 {
+  transform: rotate(292.5deg) translate(38rem) rotate(-292.5deg)
+    rotate(382.5deg);
+}
+.deg315 {
+  transform: rotate(315deg) translate(38rem) rotate(-315deg) rotate(405deg);
+}
+.deg337_5 {
+  transform: rotate(337.5deg) translate(38rem) rotate(-337.5deg)
+    rotate(427.5deg);
+}
+
+/* change */
+.deg337_5_part_1,
+.deg337_5_part_2 {
+  margin: -159.454546px 0 0 -56.3636365px; /* (height / 2) & (width / 2) */
+  width: 112.727273px; /* A4 in pixels is 2480 x 3508 px divide this by 11 / 2 */
+  height: 318.909091px;
+}
+
+.deg337_5_part_1 {
+  transform: rotate(337.5deg) translate(38rem) rotate(-337.5deg)
+    rotate(427.5deg) translate(-56.3636365px); /* last translate = - (width / 2) */
+}
+
+.deg337_5_part_2 {
+  transform: rotate(337.5deg) translate(38rem) rotate(-337.5deg)
+    rotate(427.5deg) translate(56.3636365px); /* last translate = width / 2 / 2 */
+  background-position: -112.727273px; /* width / 2 */
+}
+
+#gallery .gallery_item:hover {
+  width: 225.454545px; /* A4 in pixels is 2480 x 3508 px divide this by 15 */
+  height: 318.909091px;
+  border: 3px solid white; /* Change it so the image pops up +animation */
+  z-index: 1;
+}
+
+#aboutMe {
+  width: 80vw;
+  height: 45vh;
+  top: 27.5vh;
+  left: 15vw;
+}
+
+#aboutContainer #exitButton {
+  left: -90px;
+}
+
+#aboutMe .title {
+  margin-top: 5%;
+}
+
+#aboutMe .title ul li h1 {
+  font-size: 2.5rem;
+}
+
+#aboutMe .title ul li p {
+  font-size: 1.6rem;
+}
+
+#aboutMe .title img {
+  opacity: 1;
+}
+
+#aboutMe .contactAndInfo {
+  margin: 9% 0 0 6%;
+}
+
+#aboutMe .contactAndInfo ul li,
+#aboutMe .contactAndInfo ul a {
+  font-size: 1.5rem;
+}
+
+#info .info_second {
+  display: none;
+}
+
+#info .info_second_2 {
+  display: inline-block;
+  font-size: 17px;
+}
+
+#slider {
+  grid-template-columns: 32vw;
+  grid-template-rows: 40vh 40vh;
+  grid-row-gap: 4vh;
+}
+
+#slider #return_button {
+  font-size: 22px;
+  top: 3vh;
+  left: 3vw;
+}
+
+#slider .grid-item {
+  margin: 0;
+}
+
+#slider .grid-item-1,
+#slider .grid-item-3 {
+  display: none;
+}
+
+#slider .grid-item-2,
+#slider .grid-item-4 {
+  border-top-left-radius: 3%;
+  border-bottom-left-radius: 3%;
+  width: 80vw;
+  margin-top: 8vh;
+  margin-left: 10vw;
+}
+
+#slider .grid-item-2 h1,
+#slider .grid-item-4 h1 {
+  font-size: 40px;
+  text-align: center;
+  line-height: 1.2;
+  width: 95%;
+  margin: 18% auto 0;
+}
+
+#slider .grid-item-4 p {
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+#slider .grid-item-2 a,
+#slider .grid-item-4 a {
+  font-size: 20px;
+}

@@ -18,7 +18,6 @@
   font-size: 16px;
 }
 
-/* change */
 #gallery {
   /* top: -650px; */
   top: -80%;
@@ -26,7 +25,6 @@
   left: -275%;
 }
 
-/* change */
 #gallery .gallery_item {
   margin: -125.285714px 0 0 -88.5714285px; /* (height / 2) & (width / 2) */
   width: 177.142857px; /* A4 in pixels is 2480 x 3508 px divide this by 14 */
@@ -38,7 +36,6 @@
   margin-top: -10px;
 }
 
-/* change */
 #gallery .gallery_item .title .first,
 #gallery .gallery_item .title .second {
   font-size: 14px;
@@ -99,27 +96,28 @@
     rotate(427.5deg);
 }
 
+/* change */
 .deg337_5_part_1,
 .deg337_5_part_2 {
-  margin: -116.933334px 0 0 -41.333325px; /* (height / 2) & (width / 2) */
-  width: 82.66665px; /* A4 in pixels is 2480 x 3508 px divide this by 15 / 2 */
-  height: 233.866667px;
+  margin: -125.285714px 0 0 -44.2857142px; /* (height / 2) & (width / 2) */
+  width: 88.5714285px; /* A4 in pixels is 2480 x 3508 px divide this by 14 / 2 */
+  height: 250.571429px;
 }
 
 .deg337_5_part_1 {
   transform: rotate(337.5deg) translate(30rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(-41.333325px); /* last translate = - (width / 2) */
+    rotate(427.5deg) translate(-44.2857142px); /* last translate = - (width / 2) */
 }
 
 .deg337_5_part_2 {
   transform: rotate(337.5deg) translate(30rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(41.333325px); /* last translate = width / 2 */
-  background-position: -82.66665px;
+    rotate(427.5deg) translate(44.2857142px); /* last translate = width / 2 / 2 */
+  background-position: -88.5714285px; /* width / 2 */
 }
 
 #gallery .gallery_item:hover {
-  width: 165.3333px; /* A4 in pixels is 2480 x 3508 px divide this by 15 */
-  height: 233.866667px;
+  width: 177.142857px; /* A4 in pixels is 2480 x 3508 px divide this by 15 */
+  height: 250.571429px;
   border: 3px solid white; /* Change it so the image pops up +animation */
   z-index: 1;
 }
@@ -139,12 +137,10 @@
   margin-top: 8%;
 }
 
-/* change */
 #aboutMe .title ul li h1 {
   font-size: 1.38rem;
 }
 
-/* change */
 #aboutMe .title ul li p {
   font-size: 0.79em;
 }
@@ -157,7 +153,6 @@
   margin: 19% 0 0 6%;
 }
 
-/* change */
 #aboutMe .contactAndInfo ul li,
 #aboutMe .contactAndInfo ul a {
   font-size: 1.1rem;
@@ -201,7 +196,6 @@
   margin-left: 10vw;
 }
 
-/* change */
 #slider .grid-item-2 h1,
 #slider .grid-item-4 h1 {
   font-size: 25px;
