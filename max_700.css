@@ -1,4 +1,4 @@
-/* Optimized for 1280 x 670 */
+/* Optimized for 1920 x 1000 */
 
 * {
   margin: 0;
@@ -145,15 +145,15 @@ html {
 }
 
 #aboutMe .title img {
-  width: 11%;
-  height: 11%;
+  width: 9%;
+  height: 9%;
 }
 
 #aboutMe .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5% 6% 0;
+  margin: 3% 6% 0;
 }
 
 #aboutMe ul {
@@ -222,32 +222,58 @@ html {
 }
 
 #gallery {
-  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -57em;
+  margin-left: -90rem;
   width: 180rem;
   height: 180rem;
   padding: 10.16px;
   /* border: solid 5px black; */
   border-radius: 50%;
-  margin-top: -45%;
-  margin-left: -62%;
+  /* margin-top: -16%;
+  margin-left: -25.5%; */
 }
 
 #gallery .gallery_item {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   margin: calc(-3508px / 14 / 2) 0 0 calc(-2480px / 14 / 2); /* (height / 2) & (width / 2) */
   width: calc(
     2480px / 14
   ); /* A4 in pixels is 2480 x 3508 px divide this by 9 */
   height: calc(3508px / 14);
+  transition: width 0.5s ease, height 0.5s ease;
+  /* background-color: gray; */
 }
 
-#gallery .gallery_item .title {
-  font-size: 5px;
-  margin-top: -10px;
+#gallery .gallery_item:hover {
+  width: calc(2480px / 13);
+  height: calc(3508px / 13);
+  border: 3px solid white;
+  z-index: 1;
 }
 
-#gallery .gallery_item .title .first,
-#gallery .gallery_item .title .second {
-  font-size: 13px;
+#gallery .gallery_item img {
+  display: block;
+  width: 100%;
+  /* width: 0%; */
+  height: 100%;
+}
+
+#gallery .gallery_item .first {
+  font-weight: bold;
+  color: gray;
+  font-size: 15px;
+}
+
+#gallery .gallery_item .second {
+  /* font-weight: bold; */
+  color: gray;
+  font-size: 15px;
 }
 
 .deg0 {
@@ -336,21 +362,21 @@ html {
 
 #gallery .title {
   position: absolute;
-  top: -24%;
+  top: -29%;
   left: 30%;
   transform: rotate(270deg);
   color: black;
-  /* font-size: 20px; */
+  font-size: 16px;
 }
 
-.deg337_5_part_2 p1 {
+.deg337_5_part_2 .title_2 {
   position: absolute;
   width: 100%;
-  top: -29%;
-  right: 53%;
+  top: -30%;
+  left: -59%;
   transform: rotate(270deg);
   color: black;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 #info {
@@ -366,7 +392,7 @@ html {
 }
 
 #info .info_first {
-  font-size: 110%;
+  font-size: 100%;
   font-weight: bold;
   color: rgb(38, 38, 38);
 }
@@ -378,7 +404,7 @@ html {
 }
 
 #info .info_second {
-  font-size: 110%;
+  font-size: 100%;
   color: gray;
 }
 
