@@ -78,12 +78,12 @@ html {
 
 #slider .grid-item-2 h1,
 #slider .grid-item-4 h1 {
-  font-size: 150%;
+  font-size: 300%;
   text-align: center;
   font-weight: 500;
   line-height: 1.1;
   width: 70%;
-  margin: 13% auto 0;
+  margin: 16% auto 0;
 }
 
 #slider .grid-item-2 a,
@@ -91,13 +91,13 @@ html {
   display: flex;
   justify-content: space-around;
   text-decoration: none;
-  font-size: 100%;
+  font-size: 180%;
   margin-top: 4%;
   color: #0066cc;
 }
 
 #slider .grid-item-4 p {
-  font-size: 100%;
+  font-size: 180%;
   color: #1d1d1f;
   width: 100%;
   display: flex;
@@ -146,15 +146,15 @@ html {
 }
 
 #aboutMe .title img {
-  width: 9%;
-  height: 9%;
+  width: 11%;
+  height: 11%;
 }
 
 #aboutMe .title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2% 8% 0;
+  margin: 5% 6% 0;
 }
 
 #aboutMe ul {
@@ -167,21 +167,21 @@ html {
 }
 
 #aboutMe .title ul li h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 #aboutMe .title ul li p {
-  font-size: 1.1rem;
+  font-size: 2rem;
 }
 
 #aboutMe .contactAndInfo {
-  margin: 1.5% 0 0 8%;
+  margin: 6% 0 0 6%;
 }
 
 #aboutMe .contactAndInfo ul li,
 #aboutMe .contactAndInfo ul a {
-  margin-bottom: 0%;
-  font-size: 1.1rem;
+  margin-bottom: 0.5%;
+  font-size: 1.8rem;
 }
 
 #aboutContainer #exitButton {
@@ -226,7 +226,7 @@ html {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -57em;
+  margin-top: -38rem;
   margin-left: -90rem;
   width: 180rem;
   height: 180rem;
@@ -242,18 +242,16 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: calc(-3508px / 14 / 2) 0 0 calc(-2480px / 14 / 2); /* (height / 2) & (width / 2) */
-  width: calc(
-    2480px / 14
-  ); /* A4 in pixels is 2480 x 3508 px divide this by 9 */
-  height: calc(3508px / 14);
+  margin: calc(-3508px / 9 / 2) 0 0 calc(-2480px / 9 / 2); /* (height / 2) & (width / 2) */
+  width: calc(2480px / 9); /* A4 in pixels is 2480 x 3508 px divide this by 9 */
+  height: calc(3508px / 9);
   transition: width 0.5s ease, height 0.5s ease;
   /* background-color: gray; */
 }
 
 #gallery .gallery_item:hover {
-  width: calc(2480px / 13);
-  height: calc(3508px / 13);
+  width: calc(2480px / 9);
+  height: calc(3508px / 9);
   border: 3px solid white;
   z-index: 1;
 }
@@ -268,67 +266,67 @@ html {
 #gallery .gallery_item .first {
   font-weight: bold;
   color: gray;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 #gallery .gallery_item .second {
   /* font-weight: bold; */
   color: gray;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .deg0 {
-  transform: translate(32rem) rotate(90deg);
-} /*32rem = half the width of the wrapper*/
+  transform: translate(45rem) rotate(90deg);
+} /*45rem = half the width of the wrapper*/
 .deg22_5 {
-  transform: rotate(22.5deg) translate(32rem) rotate(-22.5deg) rotate(112.5deg);
+  transform: rotate(22.5deg) translate(45rem) rotate(-22.5deg) rotate(112.5deg);
 }
 .deg45 {
-  transform: rotate(45deg) translate(32rem) rotate(-45deg) rotate(135deg);
+  transform: rotate(45deg) translate(45rem) rotate(-45deg) rotate(135deg);
 }
 .deg67_5 {
-  transform: rotate(67.5deg) translate(32rem) rotate(-67.5deg) rotate(157.5deg);
+  transform: rotate(67.5deg) translate(45rem) rotate(-67.5deg) rotate(157.5deg);
 }
 .deg90 {
-  transform: rotate(90deg) translate(32rem) rotate(-90deg) rotate(180deg);
+  transform: rotate(90deg) translate(45rem) rotate(-90deg) rotate(180deg);
 }
 .deg112_5 {
-  transform: rotate(112.5deg) translate(32rem) rotate(-112.5deg)
+  transform: rotate(112.5deg) translate(45rem) rotate(-112.5deg)
     rotate(202.5deg);
 }
 .deg135 {
-  transform: rotate(135deg) translate(32rem) rotate(-135deg) rotate(225deg);
+  transform: rotate(135deg) translate(45rem) rotate(-135deg) rotate(225deg);
 }
 .deg157_5 {
-  transform: rotate(157.5deg) translate(32rem) rotate(-157.5deg)
+  transform: rotate(157.5deg) translate(45rem) rotate(-157.5deg)
     rotate(247.5deg);
 }
 .deg180 {
-  transform: translate(-32rem) rotate(270deg);
+  transform: translate(-45rem) rotate(270deg);
 }
 .deg202_5 {
-  transform: rotate(202.5deg) translate(32rem) rotate(-202.5deg)
+  transform: rotate(202.5deg) translate(45rem) rotate(-202.5deg)
     rotate(292.5deg);
 }
 .deg225 {
-  transform: rotate(225deg) translate(32rem) rotate(-225deg) rotate(315deg);
+  transform: rotate(225deg) translate(45rem) rotate(-225deg) rotate(315deg);
 }
 .deg247_5 {
-  transform: rotate(247.5deg) translate(32rem) rotate(-247.5deg)
+  transform: rotate(247.5deg) translate(45rem) rotate(-247.5deg)
     rotate(337.5deg);
 }
 .deg270 {
-  transform: rotate(270deg) translate(32rem) rotate(-270deg);
+  transform: rotate(270deg) translate(45rem) rotate(-270deg);
 }
 .deg292_5 {
-  transform: rotate(292.5deg) translate(32rem) rotate(-292.5deg)
+  transform: rotate(292.5deg) translate(45rem) rotate(-292.5deg)
     rotate(382.5deg);
 }
 .deg315 {
-  transform: rotate(315deg) translate(32rem) rotate(-315deg) rotate(405deg);
+  transform: rotate(315deg) translate(45rem) rotate(-315deg) rotate(405deg);
 }
 .deg337_5 {
-  transform: rotate(337.5deg) translate(32rem) rotate(-337.5deg)
+  transform: rotate(337.5deg) translate(45rem) rotate(-337.5deg)
     rotate(427.5deg);
 }
 
@@ -340,30 +338,30 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: calc(-3508px / 14 / 2) 0 0 calc(-2480px / 14 / 2 / 2); /* (height / 2) & (width / 2) */
+  margin: calc(-3508px / 9 / 2) 0 0 calc(-2480px / 9 / 2 / 2); /* (height / 2) & (width / 2) */
   width: calc(
-    2480px / 14 / 2
+    2480px / 9 / 2
   ); /* A4 in pixels is 2480 x 3508 px divide this by 8 / 2 */
-  height: calc(3508px / 14);
+  height: calc(3508px / 9);
   background-color: gray;
   /* box-shadow: 0px 0px 0px #a0a0a0; */
 }
 
 .deg337_5_part_1 {
-  transform: rotate(337.5deg) translate(32rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(calc(-2480px / 14 / 2 / 2)); /* last translate = - (width / 2) */
+  transform: rotate(337.5deg) translate(45rem) rotate(-337.5deg)
+    rotate(427.5deg) translate(calc(-2480px / 9 / 2 / 2)); /* last translate = - (width / 2) */
 }
 
 .deg337_5_part_2 {
-  transform: rotate(337.5deg) translate(32rem) rotate(-337.5deg)
-    rotate(427.5deg) translate(calc(2480px / 14 / 2 / 2)); /* last translate = width / 2 */
-  background-position: calc(-2480px / 14 / 2);
+  transform: rotate(337.5deg) translate(45rem) rotate(-337.5deg)
+    rotate(427.5deg) translate(calc(2480px / 9 / 2 / 2)); /* last translate = width / 2 */
+  background-position: calc(-2480px / 9 / 2);
   z-index: -1;
 }
 
 #gallery .title {
   position: absolute;
-  top: -29%;
+  top: -25%;
   left: 30%;
   transform: rotate(270deg);
   color: black;
@@ -373,11 +371,11 @@ html {
 .deg337_5_part_2 .title_2 {
   position: absolute;
   width: 100%;
-  top: -30%;
+  top: -29%;
   left: -59%;
   transform: rotate(270deg);
   color: black;
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #info {
@@ -393,7 +391,7 @@ html {
 }
 
 #info .info_first {
-  font-size: 100%;
+  font-size: 110%;
   font-weight: bold;
   color: rgb(38, 38, 38);
 }
@@ -405,7 +403,7 @@ html {
 }
 
 #info .info_second {
-  font-size: 100%;
+  font-size: 110%;
   color: gray;
 }
 

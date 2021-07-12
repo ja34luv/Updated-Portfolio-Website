@@ -78,7 +78,7 @@ html {
 
 #slider .grid-item-2 h1,
 #slider .grid-item-4 h1 {
-  font-size: 250%;
+  font-size: 200%;
   text-align: center;
   font-weight: 500;
   line-height: 1.1;
@@ -102,6 +102,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  text-align: center;
   margin-top: 17px;
   margin-bottom: -2%;
 }
@@ -166,7 +167,7 @@ html {
 }
 
 #aboutMe .title ul li h1 {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 
 #aboutMe .title ul li p {
@@ -174,13 +175,13 @@ html {
 }
 
 #aboutMe .contactAndInfo {
-  margin: 4% 0 0 6%;
+  margin: 2% 0 0 6%;
 }
 
 #aboutMe .contactAndInfo ul li,
 #aboutMe .contactAndInfo ul a {
-  margin-bottom: 0.5%;
-  font-size: 1.5rem;
+  margin-bottom: 0%;
+  font-size: 1.3rem;
 }
 
 #aboutContainer #exitButton {
@@ -364,7 +365,7 @@ html {
 
 #gallery .title {
   position: absolute;
-  top: -26%;
+  top: -29%;
   left: 30%;
   transform: rotate(270deg);
   color: black;
@@ -374,7 +375,7 @@ html {
 .deg337_5_part_2 .title_2 {
   position: absolute;
   width: 100%;
-  top: -27%;
+  top: -31%;
   left: -59%;
   transform: rotate(270deg);
   color: black;
